@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -129,6 +130,28 @@ namespace UI
             lblPress.Text += slurryReactor.reactorPress[1] / Math.Pow(10, 6);
             lblBeta.Text += slurryReactor.beta;
             grbCalculatedParameters.Visible = true;
+
+            using (FileStream fs = File.OpenWrite("ConcentrationH2.txt"))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    for (int i = 0; i < componentInputModel.EndTime; i++)
+                    {
+                        sw.WriteLine(slurryReactor.cLiquidComponent[0, i]);
+                    }
+                }
+            }
+
+            using (FileStream fs = File.OpenWrite("ConcentrationCO.txt"))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    for (int i = 0; i < componentInputModel.EndTime; i++)
+                    {
+                        sw.WriteLine(slurryReactor.cLiquidComponent[1, i]);
+                    }
+                }
+            }
         }
 
         private bool ValidateReactorConstatants()

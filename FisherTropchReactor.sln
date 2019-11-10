@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{E79226A5-E690-44E3-8B2F-CBE08A6ED412}"
 EndProject
@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlurryReactorUI", "UI\SlurryReactorUI.csproj", "{0D655047-D4C9-428B-9CF9-B4D695C5F589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixedCatalystReactor", "FixedCatalystReactor\FixedCatalystReactor.csproj", "{C33BA613-0A7C-4406-B8EB-324F23759E03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureControlUI", "TemperatureControlUI\TemperatureControlUI.csproj", "{26DD2A43-8244-4300-B27C-78A60CD03AA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FisherTropchTemperatureControl", "FisherTropchTemperatureControl\FisherTropchTemperatureControl.csproj", "{903BA082-D5B5-4DD4-9867-8B7597E5839F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,14 @@ Global
 		{0D655047-D4C9-428B-9CF9-B4D695C5F589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D655047-D4C9-428B-9CF9-B4D695C5F589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D655047-D4C9-428B-9CF9-B4D695C5F589}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C33BA613-0A7C-4406-B8EB-324F23759E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C33BA613-0A7C-4406-B8EB-324F23759E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C33BA613-0A7C-4406-B8EB-324F23759E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C33BA613-0A7C-4406-B8EB-324F23759E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26DD2A43-8244-4300-B27C-78A60CD03AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DD2A43-8244-4300-B27C-78A60CD03AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DD2A43-8244-4300-B27C-78A60CD03AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DD2A43-8244-4300-B27C-78A60CD03AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903BA082-D5B5-4DD4-9867-8B7597E5839F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903BA082-D5B5-4DD4-9867-8B7597E5839F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903BA082-D5B5-4DD4-9867-8B7597E5839F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903BA082-D5B5-4DD4-9867-8B7597E5839F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
